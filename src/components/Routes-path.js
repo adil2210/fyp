@@ -6,15 +6,21 @@ import Home_main from "./Home/Home-main";
 import SearchDoctor from "./Patients/SearchDoctor/Search-doctor";
 import DoctorBooking from "./Patients/Bookings/DoctorBooking";
 import Footer from "./Footer";
+import Dashboard from "./Doctors/Dashboard";
+import BreadCrumBar from "./BreadCrumBar";
 export default function RoutesPath() {
   return (
       <Router>
         <Switch>
           <Route exact path="/">
-            <Navbar/>
+            {/* <Navbar/>
             <DoctorBooking/>
-            <Footer/>
+            <Footer/> */}
             {/* <Login /> */}
+            <Navbar/>
+            <BreadCrumBar name='Dashboard' main='home'/>
+            {/* <Dashboard/> */}
+            
           </Route>
           
           <Route path="/home">
