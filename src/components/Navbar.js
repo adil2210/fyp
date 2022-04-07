@@ -36,7 +36,7 @@ export const Navbar = () => {
                 </div>
                 <ul className="main-nav">
                   <li>
-                    <Link to="/home">
+                    <Link to="home">
                       Home 
                     </Link>
                   </li>
@@ -44,13 +44,16 @@ export const Navbar = () => {
                     <Link to="#">
                       Doctors <i className="fas fa-chevron-down"></i>
                     </Link>
+                      <ul className="submenu">
+                      <li className=""><Link to="/doctor-dashboard">Dashboard</Link></li>
+                      </ul>
                   </li>
                   <li className="has-submenu ">
                      <Link to="#">
                       Patients <i className="fas fa-chevron-down"></i>
                       </Link>
                       <ul className="submenu">
-                      <li className=""><a href="/search_doctor">Search Doctor</a></li>
+                      <li className=""><Link to="/search_doctor">Search Doctor</Link></li>
                       </ul>
                   </li>
                   <li className="has-submenu ">

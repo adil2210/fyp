@@ -6,34 +6,36 @@ import Home_main from "./Home/Home-main";
 import SearchDoctor from "./Patients/SearchDoctor/Search-doctor";
 import DoctorBooking from "./Patients/Bookings/DoctorBooking";
 import Footer from "./Footer";
-import Dashboard from "./Doctors/Dashboard";
+import Layout from "../Layout/Layout";
+import Dashboard from "./Doctors/dashboard/Dashboard";
 import BreadCrumBar from "./BreadCrumBar";
 export default function RoutesPath() {
+  // const location = useLocation();
+
   return (
       <Router>
         <Switch>
-          <Route exact path="/">
-            {/* <Navbar/>
-            <DoctorBooking/>
-            <Footer/> */}
-            {/* <Login /> */}
-            <Navbar/>
-            <BreadCrumBar name='Dashboard' main='home'/>
-            {/* <Dashboard/> */}
-            
+          <Layout>
+
+          <Route exact path="/doctor-dashboard">
+            <BreadCrumBar name='Dasboard' main='home'/>
+            <Dashboard/>            
           </Route>
           
-          <Route path="/home">
+          <Route exact path="/home">
             <Home_main/>
           </Route>
 
           <Route path="/search_doctor">
-            <Navbar/>
             <SearchDoctor/>
           </Route>
 
-
+          </Layout>
         </Switch>
       </Router>
   );
 }
+ {/* <Navbar/>
+            <DoctorBooking/>
+            <Footer/> */}
+            {/* <Login /> */}
