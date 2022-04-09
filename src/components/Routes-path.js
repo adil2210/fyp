@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { Navbar } from "./Navbar";
 import Login from "./Login";
 import Home_main from "./Home/Home-main";
@@ -10,10 +10,10 @@ import Layout from "../Layout/Layout";
 import Dashboard from "./Doctors/dashboard/Dashboard";
 import BreadCrumBar from "./BreadCrumBar";
 export default function RoutesPath() {
-  // const location = useLocation();
+  // const loc = useLocation();
 
   return (
-      <Router>
+    <Router>
         <Switch>
           <Layout>
 
