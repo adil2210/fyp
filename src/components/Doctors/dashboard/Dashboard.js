@@ -14,8 +14,6 @@ export default function Dashboard() {
             <Widgets/>
             <PatientAppointments/>
           </div>
-
-          
         </div>
       </div>
     </div>

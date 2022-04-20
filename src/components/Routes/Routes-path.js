@@ -22,7 +22,8 @@ export default function RoutesPath() {
           </Route>
           
           <Route exact path="/home">
-            <Home_main/>
+            {/* <Home_main/> */}
+            <Login/>
           </Route>
 
           <Route path="/search_doctor">
