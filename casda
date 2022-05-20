@@ -1,0 +1,12 @@
+[1mdiff --git a/src/components/Routes-path.js b/src/components/Routes-path.js[m
+[1mindex 0ea4593..61d62fd 100644[m
+[1m--- a/src/components/Routes-path.js[m
+[1m+++ b/src/components/Routes-path.js[m
+[36m@@ -21,7 +21,6 @@[m [mexport default function RoutesPath() {[m
+             <BreadCrumBar name='Dasboard' main='home'/>[m
+             <Dashboard/>            [m
+           </Route>[m
+[31m-          [m
+           <Route exact path="/home">[m
+             <Home_main/>[m
+           </Route>[m

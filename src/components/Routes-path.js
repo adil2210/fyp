@@ -21,7 +21,6 @@ export default function RoutesPath() {
             <BreadCrumBar name='Dasboard' main='home'/>
             <Dashboard/>            
           </Route>
-          
           <Route exact path="/home">
             <Home_main/>
           </Route>
