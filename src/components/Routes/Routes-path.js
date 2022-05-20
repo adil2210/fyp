@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "../Navbar";
 import Login from "../Login";
 import Home_main from "../Home/Home-main";
@@ -9,32 +9,38 @@ import Footer from "../Footer";
 import Layout from "../../Layout/Layout";
 import Dashboard from "../Doctors/dashboard/Dashboard";
 import BreadCrumBar from "../BreadCrumBar";
+import DoctorProfileSettings from "../Doctors/DoctorProfile/DoctorProfileSettings";
 export default function RoutesPath() {
   // const loc = useLocation();
 
   return (
     <Router>
-        <Switch>
-          <Layout>
-
+      <Switch>
+        <Layout>
           <Route exact path="/doctor-dashboard">
-            <Dashboard/>            
+            <Dashboard />
           </Route>
           <Route exact path="/home">
-            {/* <Home_main/> */}
-            <Login/>
+            <Home_main />
+            {/* <Login/ > */}
           </Route>
 
           <Route path="/search_doctor">
-            <SearchDoctor/>
+            <SearchDoctor />
           </Route>
-
-          </Layout>
-        </Switch>
-      </Router>
+          <Route exact path="/doctor-profile">
+            <DoctorProfileSettings />
+          </Route>
+        </Layout>
+      </Switch>
+    </Router>
   );
 }
- {/* <Navbar/>
+{
+  /* <Navbar/>
             <DoctorBooking/>
-            <Footer/> */}
-            {/* <Login /> */}
+            <Footer/> */
+}
+{
+  /* <Login /> */
+}
