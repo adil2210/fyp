@@ -10,6 +10,8 @@ import Layout from "../../Layout/Layout";
 import Dashboard from "../Doctors/dashboard/Dashboard";
 import BreadCrumBar from "../BreadCrumBar";
 import DoctorProfileSettings from "../Doctors/DoctorProfile/DoctorProfileSettings";
+import PatientAppointments from "../Doctors/dashboard/PatientAppointments";
+import Appointment from "../Doctors/Appointments/Appointment";
 export default function RoutesPath() {
   // const loc = useLocation();
 
@@ -30,6 +32,9 @@ export default function RoutesPath() {
           </Route>
           <Route exact path="/doctor-profile">
             <DoctorProfileSettings />
+          </Route>
+          <Route exact path="/pending-appointments">
+            <Appointment />
           </Route>
         </Layout>
       </Switch>
