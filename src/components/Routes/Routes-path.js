@@ -10,27 +10,19 @@ import Layout from "../../Layout/Layout";
 import Dashboard from "../Doctors/dashboard/Dashboard";
 import BreadCrumBar from "../BreadCrumBar";
 import DoctorProfileSettings from "../Doctors/DoctorProfile/DoctorProfileSettings";
+import DoctorRoutes from "./DoctorRoutes/DoctorRoutes";
+import PatientRoutes from "./PatientRoutes/PatientRoutes";
 export default function RoutesPath() {
   // const loc = useLocation();
+  const user = 'patient'
 
   return (
     <Router>
       <Switch>
         <Layout>
-          <Route exact path="/doctor-dashboard">
-            <Dashboard />
-          </Route>
-          <Route exact path="/home">
-            <Home_main />
-            {/* <Login/ > */}
-          </Route>
-
-          <Route path="/search_doctor">
-            <SearchDoctor />
-          </Route>
-          <Route exact path="/doctor-profile">
-            <DoctorProfileSettings />
-          </Route>
+          {
+            user === 'patient' ? <PatientRoutes/> : <DoctorRoutes/>
+          }
         </Layout>
       </Switch>
     </Router>

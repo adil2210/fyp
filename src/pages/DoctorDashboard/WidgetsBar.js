@@ -34,7 +34,7 @@ export default function WidgetsBar(props) {
                   <div class="dash-widget-info">
                     <h6>Appoinments</h6>
                     <h3>{props.doctorRec.appointment}</h3>
-                    <p class="text-muted">{}</p>
+                    <p class="text-muted">{date.toLocaleString()}</p>
                   </div>
                 </div>
               </div>

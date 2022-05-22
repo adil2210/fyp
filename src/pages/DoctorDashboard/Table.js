@@ -6,6 +6,8 @@ export default function Table(props) {
     display: 'flex',
     flexWrap: 'nowrap'
   }
+
+
   return (
     <div>
       <div className="card card-table mb-0">
