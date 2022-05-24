@@ -16,7 +16,7 @@ export default function BreadCrumBar(props) {
               </li>
             </ol>
           </nav>
-          <h2 class="breadcrumb-title">{props.name}</h2>
+          <h2 class="breadcrumb-title">{props.title}</h2>
         </div>
       </div>
     </div>

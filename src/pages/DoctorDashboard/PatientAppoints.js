@@ -8,9 +8,6 @@ export default function PatientAppointments() {
         today: [{name:'raheel', appt_date:'12/12/30',purpose:
         'Fever', type:'New', paid_ammount:'150$'}]
     }
-
-
-
   return (
     <div className="row">
       <div className="col-md-12">
