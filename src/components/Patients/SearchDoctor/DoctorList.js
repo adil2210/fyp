@@ -174,7 +174,6 @@ export default function DoctorList() {
                       <li>
                         <i className="far fa-thumbs-up"></i> {docData.Likes}
                       </li>
-                     
                       <li>
                         <i className="fas fa-map-marker-alt"></i> {docData.location}
                       </li>
