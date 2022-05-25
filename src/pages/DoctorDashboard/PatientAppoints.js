@@ -1,13 +1,27 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Table from "./Table";
 export default function PatientAppointments() {
-    const [todayOrComing, setTodayOrComing] = useState('Today')
-    const rec={
-        upcoming: [{name:'abc', appt_date:'12/12/30',purpose:
-        'General', type:'Old', paid_ammount:'150$'}],
-        today: [{name:'raheel', appt_date:'12/12/30',purpose:
-        'Fever', type:'New', paid_ammount:'150$'}]
-    }
+  const [todayOrComing, setTodayOrComing] = useState("Today");
+  const rec = {
+    upcoming: [
+      {
+        name: "abc",
+        appt_date: "12/12/30",
+        purpose: "General",
+        type: "Old",
+        paid_ammount: "150$",
+      },
+    ],
+    today: [
+      {
+        name: "raheel",
+        appt_date: "12/12/30",
+        purpose: "Fever",
+        type: "New",
+        paid_ammount: "150$",
+      },
+    ],
+  };
   return (
     <div className="row">
       <div className="col-md-12">
@@ -18,7 +32,9 @@ export default function PatientAppointments() {
               <a
                 className="nav-link"
                 data-toggle="tab"
-                onClick={() => {setTodayOrComing('coming')}}
+                onClick={() => {
+                  setTodayOrComing("coming");
+                }}
               >
                 Upcoming
               </a>
@@ -27,16 +43,19 @@ export default function PatientAppointments() {
               <a
                 className="nav-link"
                 data-toggle="tab"
-                onClick={() => setTodayOrComing('Today')}>
+                onClick={() => setTodayOrComing("Today")}
+              >
                 Today
               </a>
             </li>
           </ul>
 
           <div className="tab-content">
-            {
-                todayOrComing === 'coming' ? <Table patients={rec.upcoming}/>: <Table patients={rec.today}/>
-            }
+            {todayOrComing === "coming" ? (
+              <Table patients={rec.upcoming} />
+            ) : (
+              <Table patients={rec.today} />
+            )}
           </div>
         </div>
       </div>

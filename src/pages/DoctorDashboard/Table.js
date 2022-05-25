@@ -2,11 +2,10 @@ import React from "react";
 
 export default function Table(props) {
   const style = {
-    justifyContent: 'space-evenly',
-    display: 'flex',
-    flexWrap: 'nowrap'
-  }
-
+    justifyContent: "space-evenly",
+    display: "flex",
+    flexWrap: "nowrap",
+  };
 
   return (
     <div>
