@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import ScheduleTiming from "../../../pages/ScheduleTiming/ScheduleTiming";
 
 export default function ScheduleTimings() {
   return (
-    <div>ScheduleTimings</div>
-  )
+    <div>
+      <ScheduleTiming />
+    </div>
+  );
 }

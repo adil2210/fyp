@@ -3,44 +3,44 @@ import React from "react";
 export default function ContactInfo() {
   return (
     <div>
-      <div class="card contact-card">
-        <div class="card-body">
-          <h4 class="card-title">Contact Details</h4>
-          <div class="row form-row">
-            <div class="col-md-6">
-              <div class="form-group">
+      <div className="card contact-card">
+        <div className="card-body">
+          <h4 className="card-title">Contact Details</h4>
+          <div className="row form-row">
+            <div className="col-md-6">
+              <div className="form-group">
                 <label>Address Line 1</label>
-                <input type="text" class="form-control" />
+                <input type="text" className="form-control" />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="control-label">Address Line 2</label>
-                <input type="text" class="form-control" />
+            <div className="col-md-6">
+              <div className="form-group">
+                <label className="control-label">Address Line 2</label>
+                <input type="text" className="form-control" />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="control-label">City</label>
-                <input type="text" class="form-control" />
+            <div className="col-md-6">
+              <div className="form-group">
+                <label className="control-label">City</label>
+                <input type="text" className="form-control" />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="control-label">State / Province</label>
-                <input type="text" class="form-control" />
+            <div className="col-md-6">
+              <div className="form-group">
+                <label className="control-label">State / Province</label>
+                <input type="text" className="form-control" />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="control-label">Country</label>
-                <input type="text" class="form-control" />
+            <div className="col-md-6">
+              <div className="form-group">
+                <label className="control-label">Country</label>
+                <input type="text" className="form-control" />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="control-label">Postal Code</label>
-                <input type="text" class="form-control" />
+            <div className="col-md-6">
+              <div className="form-group">
+                <label className="control-label">Postal Code</label>
+                <input type="text" className="form-control" />
               </div>
             </div>
           </div>

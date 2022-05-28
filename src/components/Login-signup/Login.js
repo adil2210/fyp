@@ -1,4 +1,6 @@
 import React from "react";
+import { useFormik } from "formik";
+import Yup from "yup";
 import { BrowserRouter as Router,  Link } from "react-router-dom";
 
 
@@ -29,7 +31,7 @@ export default function Login() {
                             Login <span>Doccure</span>
                           </h3>
                         </div>
-                        <form action="https://doccure-laravel.dreamguystech.com/template/public/index">
+                        <form>
                           <div className="form-group form-focus">
                             <input
                               type="email"

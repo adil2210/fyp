@@ -1,246 +1,257 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 export default function DoctorBooking() {
-const [dateTime, setdateTime] = useState(new Date())
+  const [dateTime, setdateTime] = useState(new Date());
 
-useEffect(() => {
+  useEffect(() => {
     setInterval(() => setdateTime(new Date()), 30000);
-},[])
-
+  }, []);
 
   return (
-      <>
-    <div className="breadcrumb-bar">
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-md-12 col-12">
-            <nav aria-label="breadcrumb" className="page-breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Booking
-                </li>
-              </ol>
-            </nav>
-            <h2 className="breadcrumb-title">Booking</h2>
+    <>
+      <div className="breadcrumb-bar">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-md-12 col-12">
+              <nav aria-label="breadcrumb" className="page-breadcrumb">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Booking
+                  </li>
+                </ol>
+              </nav>
+              <h2 className="breadcrumb-title">Booking</h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="content">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<div class="card">
-<div class="card-body">
-<div class="booking-doc-info">
-<a href="doctor-profile.html" class="booking-doc-img">
-<img src="assets/img/doctors/WhatsApp Image 2022-02-16 at 10.38.26 PM.jpeg" alt="User Image"/>
-</a>
-<div class="booking-info">
-<h4><a href="doctor-profile.html">Dr. Mannan Baig</a></h4>
-<div class="rating">
-<i class="fas fa-star filled"></i>
-<i class="fas fa-star filled"></i>
-<i class="fas fa-star filled"></i>
-<i class="fas fa-star filled"></i>
-<i class="fas fa-star"></i>
-<span class="d-inline-block average-rating">35</span>
-</div>
-<p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12 col-sm-4 col-md-6">
-{/* <h4 class="mb-1">11 November 2019</h4> */}
-{/* <p class="text-muted">Monday</p> */}
-<h4 class="mb-1">
-              {' '}
-              {dateTime.toLocaleDateString('en-GB', {
-                 day: 'numeric',
-                 month: 'short',
-                 year: 'numeric',
-              })}
-            </h4>
-            
-            <p class="text-muted">
-             {dateTime.toLocaleString('en-US', {
-                hour: 'numeric',
-                minute: 'numeric',
-                hour12: true,
-            })}
-            </p></div>
-<div class="col-12 col-sm-8 col-md-6 text-sm-right">
-<div class="bookingrange btn btn-white btn-sm mb-3">
-<i class="far fa-calendar-alt mr-2"></i>
-<span></span>
-<i class="fas fa-chevron-down ml-2"></i>
-</div>
-</div>
-</div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="booking-doc-info">
+                    <a href="doctor-profile.html" class="booking-doc-img">
+                      <img
+                        src="assets/img/doctors/WhatsApp Image 2022-02-16 at 10.38.26 PM.jpeg"
+                        alt="User Image"
+                      />
+                    </a>
+                    <div class="booking-info">
+                      <h4>
+                        <a href="doctor-profile.html">Dr. Mannan Baig</a>
+                      </h4>
+                      <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="d-inline-block average-rating">35</span>
+                      </div>
+                      <p class="text-muted mb-0">
+                        <i class="fas fa-map-marker-alt"></i> Newyork, USA
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-4 col-md-6">
+                  {/* <h4 class="mb-1">11 November 2019</h4> */}
+                  {/* <p class="text-muted">Monday</p> */}
+                  <h4 class="mb-1">
+                    {" "}
+                    {dateTime.toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                  </h4>
 
-<div class="card booking-schedule schedule-widget">
+                  <p class="text-muted">
+                    {dateTime.toLocaleString("en-US", {
+                      hour: "numeric",
+                      minute: "numeric",
+                      hour12: true,
+                    })}
+                  </p>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 text-sm-right">
+                  <div class="bookingrange btn btn-white btn-sm mb-3">
+                    <i class="far fa-calendar-alt mr-2"></i>
+                    <span></span>
+                    <i class="fas fa-chevron-down ml-2"></i>
+                  </div>
+                </div>
+              </div>
 
-<div class="schedule-header">
-<div class="row">
-<div class="col-md-12">
+              <div class="card booking-schedule schedule-widget">
+                <div class="schedule-header">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="day-slot">
+                        <ul>
+                          <li class="left-arrow">
+                            <a href="#">
+                              <i class="fa fa-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <span>Mon</span>
+                            <span class="slot-date">
+                              11 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Tue</span>
+                            <span class="slot-date">
+                              12 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Wed</span>
+                            <span class="slot-date">
+                              13 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Thu</span>
+                            <span class="slot-date">
+                              14 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Fri</span>
+                            <span class="slot-date">
+                              15 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Sat</span>
+                            <span class="slot-date">
+                              16 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li>
+                            <span>Sun</span>
+                            <span class="slot-date">
+                              17 Nov <small class="slot-year">2019</small>
+                            </span>
+                          </li>
+                          <li class="right-arrow">
+                            <a href="#">
+                              <i class="fa fa-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-<div class="day-slot">
-<ul>
-<li class="left-arrow">
-<a href="#">
-<i class="fa fa-chevron-left"></i>
-</a>
-</li>
-<li>
-<span>Mon</span>
-<span class="slot-date">11 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Tue</span>
-<span class="slot-date">12 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Wed</span>
-<span class="slot-date">13 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Thu</span>
-<span class="slot-date">14 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Fri</span>
-<span class="slot-date">15 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Sat</span>
-<span class="slot-date">16 Nov <small class="slot-year">2019</small></span>
-</li>
-<li>
-<span>Sun</span>
-<span class="slot-date">17 Nov <small class="slot-year">2019</small></span>
-</li>
-<li class="right-arrow">
-<a href="#">
-<i class="fa fa-chevron-right"></i>
-</a>
-</li>
-</ul>
-</div>
+                <div class="schedule-cont">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="time-slot">
+                        <ul class="clearfix">
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing selected" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="timing" href="#">
+                              <span>9:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>10:00</span> <span>AM</span>
+                            </a>
+                            <a class="timing" href="#">
+                              <span>11:00</span> <span>AM</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-</div>
-</div>
-</div>
-
-
-<div class="schedule-cont">
-<div class="row">
-<div class="col-md-12">
-
-<div class="time-slot">
-<ul class="clearfix">
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing selected" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-<li>
-<a class="timing" href="#">
-<span>9:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>10:00</span> <span>AM</span>
-</a>
-<a class="timing" href="#">
-<span>11:00</span> <span>AM</span>
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-
-<div class="submit-section proceed-btn text-right">
-<a href="checkout.html" class="btn btn-primary submit-btn">Proceed to Pay</a>
-</div>
-
-</div>
-</div>
-</div>
-</div>
+              <div class="submit-section proceed-btn text-right">
+                <a href="checkout.html" class="btn btn-primary submit-btn">
+                  Proceed to Pay
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-    
-
-    
   );
 }
